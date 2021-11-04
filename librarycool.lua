@@ -581,7 +581,7 @@ function Luxt.CreateWindow(libName)
                                 checkBtn.ImageRectOffset = Vector2.new(940, 784)
                                 checkBtn.ImageRectSize = Vector2.new(48,48)
                             end
-                            wait(1)
+                            wait(0.25)
                             togDe = false
                         end
                     end)
