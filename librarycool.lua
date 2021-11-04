@@ -195,7 +195,7 @@ function Luxt.CreateWindow(libName)
     wave.Position = UDim2.new(0.0213434305, 0, 0, 0)
     wave.Size = UDim2.new(0.97865659, 0, 0.557522118, 0)
     wave.Image = ""
-    wave.ImageColor3 = Color3.fromRGB(181, 249, 255)
+    wave.ImageColor3 = Color3.fromRGB(135, 140, 140)
     wave.ImageTransparency = 0.300
     wave.ScaleType = Enum.ScaleType.Slice
 
@@ -243,7 +243,7 @@ function Luxt.CreateWindow(libName)
 
         tabBtn.Name = "tabBtn"
         tabBtn.Parent = tabBtnFrame
-        tabBtn.BackgroundColor3 = Color3.fromRGB(76, 91, 92)
+        tabBtn.BackgroundColor3 = Color3.fromRGB(115, 115, 115)
         tabBtn.BackgroundTransparency = 1.000
         tabBtn.Position = UDim2.new(0.245534033, 0, 0, 0)
         tabBtn.Size = UDim2.new(0, 101, 0, 30)
@@ -530,7 +530,7 @@ function Luxt.CreateWindow(libName)
                     checkBtn.Size = UDim2.new(0, 25, 0, 25)
                     checkBtn.ZIndex = 2
                     checkBtn.Image = "rbxassetid://3926311105"
-                    checkBtn.ImageColor3 = Color3.fromRGB(97, 97, 97)
+                    checkBtn.ImageColor3 = Color3.fromRGB(255, 255, 255)
                     checkBtn.ImageRectOffset = Vector2.new(940, 784)
                     checkBtn.ImageRectSize = Vector2.new(48, 48)
 
@@ -865,7 +865,7 @@ function Luxt.CreateWindow(libName)
                                 dragPrecent.Size = UDim2.new(0, 44, 0, 15)
                                 dragPrecent.ZIndex = 2
                                 dragPrecent.Font = Enum.Font.GothamSemibold
-                                dragPrecent.Text = "0%"
+                                dragPrecent.Text = "0'"
                                 dragPrecent.TextColor3 = Color3.fromRGB(255, 255, 255)
                                 dragPrecent.TextSize = 12.000
                                 dragPrecent.BackgroundTransparency = 1
@@ -948,7 +948,7 @@ function Luxt.CreateWindow(libName)
                                     dragSlider.Size = UDim2.new(0, math.clamp(mouse.X - dragSlider.AbsolutePosition.X, 0, 150), 0, 6)
                                     moveconnection = mouse.Move:Connect(function()
                                         local Percentage = (Value/ maxvalue) * 100
-                                        dragPrecent.Text = math.floor(Percentage).."%"
+                                        dragPrecent.Text = math.floor(Percentage).."'"
                                         Value = math.floor((((tonumber(maxvalue) - tonumber(minvalue)) / 150) * dragSlider.AbsoluteSize.X) + tonumber(minvalue))
                                         pcall(function()
                                             callback(Value)
@@ -962,7 +962,7 @@ function Luxt.CreateWindow(libName)
                                                 callback(Value)
                                             end)
                                             Percentage = (Value/ maxvalue) * 100
-                                            dragPrecent.Text = math.floor(Percentage).."%"
+                                            dragPrecent.Text = math.floor(Percentage).."'"
                                             dragSlider.Size = UDim2.new(0, math.clamp(mouse.X - dragSlider.AbsolutePosition.X, 0, 150), 0, 6)
                                             moveconnection:Disconnect()
                                             releaseconnection:Disconnect()
@@ -1239,7 +1239,7 @@ function Luxt.CreateWindow(libName)
                                         optionBtn1.MouseLeave:Connect(function()
                                             game.TweenService:Create(optionBtn1, TweenInfo.new(0.18, Enum.EasingStyle.Linear, Enum.EasingDirection.Out),{
                                                 BackgroundColor3 = Color3.fromRGB(21, 21, 21),
-                                                TextColor3 = Color3.fromRGB(120, 200, 187)
+                                                TextColor3 = Color3.fromRGB(79, 82, 81)
                                             }):Play()
                                         end)
                                 end
