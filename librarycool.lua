@@ -529,7 +529,7 @@ function Luxt.CreateWindow(libName)
                     checkBtn.Position = UDim2.new(0.0191780813, 0, 0.138888896, 0)
                     checkBtn.Size = UDim2.new(0, 25, 0, 25)
                     checkBtn.ZIndex = 2
-                    checkBtn.Image = ""
+                    checkBtn.Image = "rbxassetid://392631110"
                     checkBtn.ImageColor3 = Color3.fromRGB(255, 255, 255)
                     checkBtn.ImageRectOffset = Vector2.new(940, 784)
                     checkBtn.ImageRectSize = Vector2.new(48, 48)
