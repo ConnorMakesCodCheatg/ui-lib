@@ -1,6 +1,6 @@
-local Luxt1 = {}
+local Luxt = {}
 
-function Luxt1.CreateWindow(libName, logoId)
+function Luxt.CreateWindow(libName, logoId)
     local LuxtLib = Instance.new("ScreenGui")
     local shadow = Instance.new("ImageLabel")
     local MainFrame = Instance.new("Frame")
@@ -511,7 +511,7 @@ function Luxt1.CreateWindow(libName, logoId)
                     local togInList = Instance.new("UIListLayout")
                     local toginPad = Instance.new("UIPadding")
                     local UIListLayout = Instance.new("UIListLayout")
-                    local a 
+
                     --
                     toggInfo = toggInfo or "Toggle"
                     callback = callback or function() end
@@ -575,23 +575,23 @@ function Luxt1.CreateWindow(libName, logoId)
                     local togDe = false
                     checkBtn.MouseButton1Click:Connect(function()
                         if not togDe then
-                                togDe = true
-                                on = not on
-                                 callback(on) 
-                                if on then
-                                    checkBtn.Parent.toggleInfo.TextColor3 = Color3.fromRGB(153, 255, 238)
-                                    checkBtn.ImageColor3 = Color3.fromRGB(153, 255, 238)
-                                    checkBtn.ImageRectOffset = Vector2.new(4, 836)
-                                    checkBtn.ImageRectSize = Vector2.new(48,48)
-                                else
-                                    checkBtn.Parent.toggleInfo.TextColor3 = Color3.fromRGB(97, 97, 97)
-                                    checkBtn.ImageColor3 = Color3.fromRGB(97, 97, 97)
-                                    checkBtn.ImageRectOffset = Vector2.new(940, 784)
-                                    checkBtn.ImageRectSize = Vector2.new(48,48)
-                                end
-                                wait(1)
-                                togDe = false
+                            togDe = true
+                            on = not on
+                            callback(on)
+                            if on then
+                                checkBtn.Parent.toggleInfo.TextColor3 = Color3.fromRGB(153, 255, 238)
+                                checkBtn.ImageColor3 = Color3.fromRGB(153, 255, 238)
+                                checkBtn.ImageRectOffset = Vector2.new(4, 836)
+                                checkBtn.ImageRectSize = Vector2.new(48,48)
+                            else
+                                checkBtn.Parent.toggleInfo.TextColor3 = Color3.fromRGB(97, 97, 97)
+                                checkBtn.ImageColor3 = Color3.fromRGB(97, 97, 97)
+                                checkBtn.ImageRectOffset = Vector2.new(940, 784)
+                                checkBtn.ImageRectSize = Vector2.new(48,48)
                             end
+                            wait(1)
+                            togDe = false
+                        end
                     end)
 
                     checkBtn.MouseButton1Up:Connect(function()
@@ -711,7 +711,7 @@ function Luxt1.CreateWindow(libName, logoId)
                             textPlace = textPlace or "PlaceHolder"
                             callback = callback or function() end
                             --
-                            local a
+
                             local TextBoxFrame = Instance.new("Frame")
                             local textboxFrame = Instance.new("Frame")
                             local UICorner = Instance.new("UICorner")
@@ -1261,6 +1261,3 @@ function Luxt1.CreateWindow(libName, logoId)
 end
 
 return Luxt
-
-
-
