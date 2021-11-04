@@ -445,7 +445,7 @@ function Luxt.CreateWindow(libName)
                     if not debounce then
                         debounce = true
                         callback()
-                        wait(1)
+                        wait(0.10)
                         debounce = false
                     end
                 end)
@@ -474,7 +474,7 @@ function Luxt.CreateWindow(libName)
                             BackgroundColor3 = Color3.fromRGB(62, 64, 63),
                             TextColor3 = Color3.fromRGB(0,0,0)
                         }):Play()
-                        wait(1)
+                        wait(0.10)
                         debounce1 = false
                     end
                 end)
