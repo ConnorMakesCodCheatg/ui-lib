@@ -309,12 +309,12 @@ function Luxt.CreateWindow(libName)
                     for i,v in next, v:GetChildren() do
                         if v:IsA("TextButton") then
                             game.TweenService:Create(v, TweenInfo.new(0.18, Enum.EasingStyle.Quint, Enum.EasingDirection.In), {
-                                TextColor3 = Color3.fromRGB(35, 59, 55)
+                                Text3 = Color3.fromRGB(59, 64, 63)
                             }):Play()
                         end
                         if v:IsA("ImageLabel") then
                             game.TweenService:Create(v, TweenInfo.new(0.18, Enum.EasingStyle.Quint, Enum.EasingDirection.In), {
-                                ImageColor3 = Color3.fromRGB(35, 59, 55)
+                                ImageColor3 = Color3.fromRGB(59, 64, 63)
                             }):Play()
                         end
                     end
@@ -471,7 +471,7 @@ function Luxt.CreateWindow(libName)
                         debounce1 = true
                         TextButton:TweenSize(UDim2.new(0, 359,0, 30), "InOut", "Quint", 0.18, true)
                         game.TweenService:Create(TextButton, TweenInfo.new(0.18, Enum.EasingStyle.Linear, Enum.EasingDirection.Out),{
-                            BackgroundColor3 = Color3.fromRGB(101, 168, 157),
+                            BackgroundColor3 = Color3.fromRGB(62, 64, 63),
                             TextColor3 = Color3.fromRGB(0,0,0)
                         }):Play()
                         wait(1)
@@ -1224,7 +1224,7 @@ function Luxt.CreateWindow(libName)
                                         optionBtn1.MouseButton1Up:Connect(function()
                                             optionBtn1:TweenSize(UDim2.new(0, 339,0, 34), "InOut", "Quint", 0.12, true)
                                             game.TweenService:Create(optionBtn1, TweenInfo.new(0.18, Enum.EasingStyle.Linear, Enum.EasingDirection.Out),{
-                                                BackgroundColor3 = Color3.fromRGB(101, 168, 157),
+                                                BackgroundColor3 = Color3.fromRGB(62, 64, 63),
                                                 TextColor3 = Color3.fromRGB(0,0,0)
                                             }):Play()
                                         end)
