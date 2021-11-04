@@ -1,13 +1,12 @@
 local Luxt = {}
 
-function Luxt.CreateWindow(libName, logoId)
+function Luxt.CreateWindow(libName)
     local LuxtLib = Instance.new("ScreenGui")
     local shadow = Instance.new("ImageLabel")
     local MainFrame = Instance.new("Frame")
     local sideHeading = Instance.new("Frame")
     local MainCorner = Instance.new("UICorner")
     local sideCover = Instance.new("Frame")
-    local hubLogo = Instance.new("ImageLabel")
     local MainCorner_2 = Instance.new("UICorner")
     local hubName = Instance.new("TextLabel")
     local tabFrame = Instance.new("ScrollingFrame")
@@ -107,7 +106,7 @@ function Luxt.CreateWindow(libName, logoId)
 
     --
     libName = libName or "LuxtLib"
-    logoId = logoId or ""
+
     --
 
     LuxtLib.Name = "LuxtLib"..libName
@@ -137,13 +136,6 @@ function Luxt.CreateWindow(libName, logoId)
     sideCover.Position = UDim2.new(0.909677446, 0, 0, 0)
     sideCover.Size = UDim2.new(0, 14, 0, 452)
 
-    hubLogo.Name = "hubLogo"
-    hubLogo.Parent = sideHeading
-    hubLogo.BackgroundColor3 = Color3.fromRGB(48, 51, 51)
-    hubLogo.Position = UDim2.new(0.0567928664, 0, 0.0243411884, 0)
-    hubLogo.Size = UDim2.new(0, 30, 0, 30)
-    hubLogo.ZIndex = 2
-    hubLogo.Image = "rbxassetid://"..logoId
 
     MainCorner_2.CornerRadius = UDim.new(0, 999)
     MainCorner_2.Name = "MainCorner"
