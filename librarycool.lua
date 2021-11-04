@@ -31,7 +31,7 @@ function Luxt.CreateWindow(libName, logoId)
     key1.ZIndex = 2
     key1.Font = Enum.Font.GothamSemibold
     key1.Text = "LeftAlt"
-    key1.TextColor3 = Color3.fromRGB(153, 255, 238)
+    key1.TextColor3 = Color3.fromRGB(250, 250, 250)
     key1.TextSize = 14.000
 
     local oldKey = Enum.KeyCode.LeftAlt.Name
@@ -158,7 +158,7 @@ function Luxt.CreateWindow(libName, logoId)
     hubName.ZIndex = 2
     hubName.Font = Enum.Font.GothamSemibold
     hubName.Text = libName
-    hubName.TextColor3 = Color3.fromRGB(153, 255, 238)
+    hubName.TextColor3 = Color3.fromRGB(250, 250, 250)
     hubName.TextSize = 14.000
     hubName.TextWrapped = true
     hubName.TextXAlignment = Enum.TextXAlignment.Left
@@ -202,7 +202,7 @@ function Luxt.CreateWindow(libName, logoId)
     wave.BackgroundTransparency = 1.000
     wave.Position = UDim2.new(0.0213434305, 0, 0, 0)
     wave.Size = UDim2.new(0.97865659, 0, 0.557522118, 0)
-    wave.Image = "http://www.roblox.com/asset/?id=7215094292"
+    wave.Image = ""
     wave.ImageColor3 = Color3.fromRGB(181, 249, 255)
     wave.ImageTransparency = 0.300
     wave.ScaleType = Enum.ScaleType.Slice
@@ -227,8 +227,8 @@ function Luxt.CreateWindow(libName, logoId)
     shadow.Position = UDim2.new(0.319562584, 0, 0.168689325, 0)
     shadow.Size = UDim2.new(0, 609, 0, 530)
     shadow.ZIndex = 0
-    shadow.Image = "http://www.roblox.com/asset/?id=6105530152"
-    shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+    shadow.Image = ""
+    shadow.ImageColor3 = Color3.fromRGB(191, 191, 191)
     shadow.ImageTransparency = 0.200
 
     local TabHandling = {}
